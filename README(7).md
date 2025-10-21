@@ -88,19 +88,24 @@ documents the **Steam Games Dataset** analysis: objectives, questions, methods, 
 ## Figures (Imported from Discussions)
 
 **Figure 1.**  
-![](images/image1.png)
+<img width="940" height="599" alt="image" src="https://github.com/user-attachments/assets/85224815-2134-4bfa-94af-d00715f576c9" />
+
 
 **Figure 2.**  
-![](images/image2.png)
+<img width="940" height="602" alt="image" src="https://github.com/user-attachments/assets/1ce9a78a-36e7-40bc-94ec-1dc828285ca6" />
+
 
 **Figure 3.**  
-![](images/image3.png)
+<img width="816" height="519" alt="image" src="https://github.com/user-attachments/assets/96f08010-42f0-4fa3-8fe8-1ffdbb3717ff" />
+
 
 **Figure 4.**  
-![](images/image4.png)
+<img width="940" height="516" alt="image" src="https://github.com/user-attachments/assets/23312692-e089-47d7-acfb-56e4f6aec672" />
+
 
 **Figure 5.**  
-![](images/image5.png)
+<img width="940" height="579" alt="image" src="https://github.com/user-attachments/assets/1bbe4129-0ff3-42fd-9eee-9642e2a87057" />
+
 
 
 ## Reflections & Learning
