@@ -1,4 +1,4 @@
-# Steam Games Analytics — Discussion-to-Report
+# Steam Games Analytics 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](#license) [![Made with R](https://img.shields.io/badge/Made%20with-R-blue)](#reproducibility) [![Dataset: Kaggle](https://img.shields.io/badge/Dataset-Kaggle-orange)](#data)
 
