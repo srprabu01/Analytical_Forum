@@ -77,15 +77,6 @@ This portfolio synthesizes six analytics themes into a unified, decision-oriente
 - Aggregation may hide park-level anomalies; confirm with park-specific time series.
 - External shocks (wildfires, access closures) require annotations for causal clarity.
 
----
-
-- ![Total National Park Visitors Over Time](images/m01-total-visitors.png)
-- ![Park-by-Park Trends](images/m01-park-trends.png)
-- ![Acreage Distribution](images/m01-acreage-split.png)
-- ![Temperature Patterns](images/m01-temp-heatmap.png)
-
----
-
 ## Module 2 — Confidence Intervals for Retention
 
 **Scenario:** Estimating the **true** Day-7 retention proportion from a sampled cohort of game installs.
