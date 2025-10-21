@@ -1,4 +1,4 @@
-# Analytics Discussion Portfolio — Report & Inferences
+# Analytics Discussion Portfolio
 
 A structured, evidence-based write-up consolidating modules on data visualization, confidence intervals, hypothesis testing, subgroup analysis, regression, and dummy-variable modeling. Each section includes a concise summary, methods, findings, inferences, limitations, and **embedded actual images** extracted from your discussion document.
 
@@ -48,7 +48,6 @@ This portfolio synthesizes six analytics themes into a unified, decision-oriente
 - ![Park-by-Park Trends](images/m01-park-trends.png)
 - ![Acreage Distribution](images/m01-acreage-split.png)
 - ![Temperature Patterns](images/m01-temp-heatmap.png)
-- ![Monthly Visitors](images/m01-monthly-visitors.png)
 
 ---
 
