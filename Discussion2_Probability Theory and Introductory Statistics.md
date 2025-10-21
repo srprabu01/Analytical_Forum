@@ -1,6 +1,6 @@
-# Analytics Discussion Portfolio
+# Analytics Discussion Portfolio — Report & Inferences
 
-A structured, evidence-based write-up consolidating modules on data visualization, confidence intervals, hypothesis testing, subgroup analysis, regression, and dummy-variable modeling. Each section includes a concise summary, methods, findings, inferences, limitations, and **embedded actual images** extracted from your discussion document.
+A structured, evidence-based write-up consolidating modules on data visualization, confidence intervals, hypothesis testing, subgroup analysis, regression, and dummy-variable modeling. Each section includes a concise summary, methods, findings, inferences, limitations, and image embeds for quick visual context.
 
 ---
 
@@ -13,7 +13,6 @@ A structured, evidence-based write-up consolidating modules on data visualizatio
 - [Module 4 — Two-Sample t-Test (Six Sigma)](#module-4--two-sample-t-test-six-sigma)
 - [Module 5 — Regression Model for GPA](#module-5--regression-model-for-gpa)
 - [Module 6 — Dummy Variables & Subset Analysis](#module-6--dummy-variables--subset-analysis)
-- [Image Source Mapping](#image-source-mapping)
 - [How to Reproduce / Extend](#how-to-reproduce--extend)
 - [References](#references)
 
@@ -21,7 +20,14 @@ A structured, evidence-based write-up consolidating modules on data visualizatio
 
 ## Executive Summary
 
-This portfolio synthesizes six analytics themes into a unified, decision-oriented report.
+This portfolio synthesizes six analytics themes into a unified, decision-oriented report:
+
+- **Exploratory Visualization:** Multi-graph views of U.S. National Park visitation reveal long-run growth, WWII-era dips, and strong seasonality patterns; pairing visitation with temperature heatmaps links climate to demand.
+- **Estimation under Uncertainty:** Confidence intervals around proportions (e.g., Day-7 retention) quantify reliability of sample-based metrics and support A/B outcome interpretation.
+- **Risk of Statistical Errors:** The severity of Type I vs. Type II errors is context-dependent; in high-stakes domains (e.g., life-saving therapies), Type II (missed signal) can be costlier.
+- **Causal Signals via t-Tests:** A two-sample t-test can demonstrate operational improvement (e.g., faster café wait times after a new order system), moving from anecdote to evidence.
+- **Predictive Relationships:** A multivariate regression on GPA with study hours, attendance, and sleep quality illustrates variance explanation and the role of R^2.
+- **Heterogeneity & Policy:** Dummy variables and subset (segmented) regressions expose different cost structures across logistics carriers—critical for contract and routing strategy.
 
 ---
 
@@ -29,7 +35,7 @@ This portfolio synthesizes six analytics themes into a unified, decision-oriente
 
 ```
 .
-├─ README.md
+├─ README.md                  # This report
 ├─ images/
 │  ├─ m01-total-visitors.png
 │  ├─ m01-park-trends.png
@@ -38,11 +44,40 @@ This portfolio synthesizes six analytics themes into a unified, decision-oriente
 │  ├─ m01-monthly-visitors.png
 │  ├─ m04-wait-time-before-after.png
 │  └─ m05-gpa-regression-schematic.png
+└─ data/                      # (Optional) any supporting CSVs or notes
 ```
+
+> 💡 **Tip:** Keep images at ~1400px width for crisp rendering on GitHub. Filenames above are suggested; feel free to change but update the links below.
 
 ---
 
 ## Module 1 — Visualizing National Park Trends
+
+**Objective:** Use multi-view graphics to understand long-term visitation, seasonality, acreage concentration, and climate context across U.S. national parks.
+
+**Key Visuals (embed your images):**
+- ![Total National Park Visitors Over Time](images/m01-total-visitors.png "Line graph of total visits, ~1904–2017")
+- ![Park-by-Park Trends](images/m01-park-trends.png "Multi-line chart across parks")
+- ![Acreage Distribution](images/m01-acreage-split.png "Pie charts by park and by state")
+- ![Temperature Patterns](images/m01-temp-heatmap.png "Monthly high/low heatmaps by park")
+- ![Monthly Visitors](images/m01-monthly-visitors.png "2017 visitation heatmap by park & month")
+
+**Findings:**
+- Century-scale growth with a WWII dip; post-2013 surge to ~84M+ annual visits by 2017.
+- Great Smoky Mountains NP is a consistent visitation leader.
+- **Acreage is extremely concentrated:** Alaska holds ~65% of national park acreage; Wrangell–St. Elias ~8.3M acres.
+- Strong **seasonal demand** patterns; warm-weather parks peak in winter.
+
+**Inferences & Use Cases:**
+- **Operations:** Anticipate staffing and crowd control via temperature-visitation coupling.
+- **Commercial:** Dynamic pricing (lodging, tours) around peak months/parks; winter strategy for hot-climate parks.
+- **Modeling:** Weather-sensitive demand models for capacity & revenue forecasting.
+
+**Limitations:**
+- Aggregation may hide park-level anomalies; confirm with park-specific time series.
+- External shocks (wildfires, access closures) require annotations for causal clarity.
+
+---
 
 - ![Total National Park Visitors Over Time](images/m01-total-visitors.png)
 - ![Park-by-Park Trends](images/m01-park-trends.png)
@@ -100,9 +135,6 @@ This portfolio synthesizes six analytics themes into a unified, decision-oriente
 - Approx. normality via CLT at n=30; consider Welch’s t-test if variances differ.
 - Pairing is possible if the same store/time windows can be matched.
 
-**(Optional) Visual:**
-- ![Wait Time Before vs After](images/m04-wait-time-before-after.png "Distribution/summary plot")
-
 ---
 
 ## Module 5 — Regression Model for GPA
@@ -119,9 +151,6 @@ This portfolio synthesizes six analytics themes into a unified, decision-oriente
 **Caveats:**
 - Check multicollinearity (e.g., study hours vs attendance).
 - Sleep quality measured on Likert scales: consider robust or ordinal-aware approaches.
-
-**(Optional) Visual:**
-- ![GPA Regression Schematic](images/m05-gpa-regression-schematic.png "Conceptual diagram of predictors and GPA")
 
 ---
 
